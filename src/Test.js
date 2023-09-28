@@ -18,6 +18,15 @@ export const Test = () => {
         {/* It is a {color} {model} from {year}.  */}
         It is a {car.color} {car.model} from {car.year}.
       </p>
+      <button
+        onClick={() => {
+          setCar((previous) => {
+            return { ...previous, color: 'blue' };
+          });
+        }}
+      >
+        Test
+      </button>
     </div>
   );
 };
